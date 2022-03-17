@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tragaperras</title>
+    <link rel="stylesheet" type="text/css" href="tragaperras.css" />
+    <script type="text/javascript" src="tragaperras.js" defer></script>
+  </head>
+  <body>
+    <div class="monedero">
+      <form class="formMonedas" id="formMonedas">
+        <label for="inputMonedas"><b>Introduce monedas:</b></label>
+        <br /><br />
+        <div class="inputMonedasEx">
+          <input
+            type="number"
+            id="inputMonedas"
+            name="inputMonedas"
+            min="1"
+            value="0"
+          />
+          <button id="botonIntroducir">Introducir</button>
+        </div>
+        <p>El número actual de monedas es de:</p>
+        <h1 id="indicadorNumeroMonedas">0</h1>
+        <button class="botonSalir" id="botonSalir">Salir</button>
+      </form>
+    </div>
+    <br />
+
+    <div class="maquina">
+      <div class="slots">
+        <div class="slot">
+          <img
+            class="imgSlot"
+            id="slot0"
+            src="img/pingu.png"
+            alt="Slot0"
+            style="width: 100%"
+          />
+        </div>
+        <div class="slot">
+          <img
+            class="imgSlot"
+            id="slot1"
+            src="img/pingu.png"
+            alt="Slot1"
+            style="width: 100%"
+          />
+        </div>
+        <div class="slot">
+          <img
+            class="imgSlot"
+            id="slot2"
+            src="img/pingu.png"
+            alt="Slot2"
+            style="width: 100%"
+          />
+        </div>
+        <div class="slot">
+          <button class="palanca" id="palanca">
+            <img id="imgPalanca" src="img/palancaUP.png" style="width: 100%" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="historial">
+      <h4>Historial de Movimientos</h4>
+      <ul id="movimientos"></ul>
+    </div>
+
+    <footer>Susana Manzanares Sánchez (2021)</footer-->
+  </body>
+</html>
